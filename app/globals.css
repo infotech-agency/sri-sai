@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 29% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 210 29% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 29% 10%;
+    --primary: 215 85% 27%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 210 29% 10%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 10% 40%;
+    --accent: 210 100% 52%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 15% 90%;
+    --input: 210 15% 90%;
+    --ring: 215 85% 27%;
+    --radius: 0.25rem;
+
+    --navy-950: 215 60% 8%;
+    --navy-900: 215 55% 11%;
+    --navy-800: 215 50% 15%;
+    --navy-700: 215 45% 20%;
+    --blue-600: 215 85% 27%;
+    --blue-500: 210 100% 42%;
+    --blue-400: 210 100% 55%;
+    --blue-100: 210 100% 95%;
+
+    --chart-1: 215 85% 27%;
+    --chart-2: 210 100% 42%;
+    --chart-3: 200 80% 50%;
+    --chart-4: 180 60% 45%;
+    --chart-5: 240 50% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: 'ss01', 'cv01';
+  }
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .navy-bg {
+    background-color: hsl(var(--navy-950));
+  }
+  .navy-bg-light {
+    background-color: hsl(var(--navy-900));
+  }
+  .hero-gradient {
+    background: linear-gradient(
+      to bottom,
+      rgba(8, 18, 35, 0.5) 0%,
+      rgba(8, 18, 35, 0.65) 50%,
+      rgba(8, 18, 35, 0.85) 100%
+    );
+  }
+  .hero-gradient-left {
+    background: linear-gradient(
+      to right,
+      rgba(8, 18, 35, 0.9) 0%,
+      rgba(8, 18, 35, 0.5) 50%,
+      rgba(8, 18, 35, 0.1) 100%
+    );
+  }
+  .section-line {
+    background: linear-gradient(
+      to right,
+      hsl(var(--blue-600)) 0%,
+      hsl(var(--blue-500)) 50%,
+      transparent 100%
+    );
+  }
+  .marquee-track {
+    animation: marquee 40s linear infinite;
+  }
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-line {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

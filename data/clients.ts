@@ -1,0 +1,33 @@
+// export const clients = [
+//   'Air India',
+//   'IndiGo',
+//   'American Airlines',
+//   'PMG',
+//   'Moving Pixel',
+//   'Asian Shoes',
+//   'McDonald\u2019s',
+//   'MMTC',
+//   'Rehau',
+//   'Coca-Cola',
+//   'Microsoft',
+//   'Blinkit',
+//   'Zepto',
+//   'Flipkart',
+// ] as const;
+
+export const clients = [
+  { name: 'Air India', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-3PaCw6OiAwDqGgwixY_OKBRpj86hgFQksO0AJyrDLw&s=10' },
+  { name: 'IndiGo', logo: 'https://1000logos.net/wp-content/uploads/2021/07/IndiGo-Logo.jpg' },
+  { name: 'American Airlines', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPaLC7nIySzZsJmWm7R9hmNdYRodu2yOfnfv6z70jeAw&s=10' },
+  { name: 'PMG', logo: 'https://static.vecteezy.com/system/resources/previews/009/129/737/non_2x/pmg-logo-pmg-letter-pmg-letter-logo-design-initials-pmg-logo-linked-with-circle-and-uppercase-monogram-logo-pmg-typography-for-technology-business-and-real-estate-brand-vector.jpg' },
+  { name: 'Moving Pixel', logo: 'https://movingpixels.in/assets/images/logo.png' },
+  { name: 'Asian Shoes', logo: 'https://m.media-amazon.com/images/S/aplus-media-library-service-media/4bd02d56-17d9-4a2a-84f8-41c0fa5cfe7b.__CR0,0,315,145_PT0_SX315_V1___.png' },
+  { name: 'McDonald\u2019s', logo: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/500px-McDonald%27s_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail' },
+  { name: 'MMTC', logo: 'https://thumb.wikimedia.org/wikipedia/en/thumb/2/2e/MMTC_Ltd_Logo.svg/1280px-MMTC_Ltd_Logo.svg.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=thumbnail' },
+  { name: 'Rehau', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnl_yd7d1SvJ1SuZE4LDORum5DQYACXUVaulhRQnrzgA&s=10' },
+  { name: 'Coca-Cola', logo: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/3840px-Coca-Cola_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail' },
+  { name: 'Microsoft', logo: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/3840px-Microsoft_logo_%282012%29.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail' },
+  { name: 'Blinkit', logo: 'https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Blinkit-yellow-app-icon.svg/1280px-Blinkit-yellow-app-icon.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail' },
+  { name: 'Zepto', logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRmECSHQNmhdRr6uyf2yzZM2JvQlRfUUCCzTIw3PnqcQ&s=10' },
+  { name: 'Flipkart', logo: 'https://1000logos.net/wp-content/uploads/2021/02/Flipkart-logo.png' },
+] as const;
